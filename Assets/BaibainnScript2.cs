@@ -20,14 +20,15 @@ public class BaibainnScript2 : MonoBehaviour
     {
         Debug.Log(count);
         countTime += Time.deltaTime; 
+        // 5秒ごとに生成
         if(countTime >= 5f)
         {
             countTime = 0f;
             count *= 2;
-            StartCoroutine("Count");
+            StartCoroutine("Counter");
         }  
     }
-     IEnumerator Count()
+     IEnumerator Counter()
      {
         for (int i=0; i<count-count/2; i++)
         {
