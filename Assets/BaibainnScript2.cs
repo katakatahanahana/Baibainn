@@ -20,8 +20,8 @@ public class BaibainnScript2 : MonoBehaviour
     {
         Debug.Log(count);
         countTime += Time.deltaTime; 
-        // 5秒ごとに生成
-        if(countTime >= 5f)
+        // 10秒ごとに生成
+        if(countTime >= 10f)
         {
             countTime = 0f;
             count *= 2;
@@ -33,7 +33,8 @@ public class BaibainnScript2 : MonoBehaviour
         for (int i=0; i<count-count/2; i++)
         {
             yield return new WaitForSeconds(0.1f);
-            Instantiate(Object,Object.transform.position,Quaternion.Euler(90, 90, 0));
+            //ランダムにしてみる？
+            Instantiate(Object,new Vector3(Random.Range(0.0f, 2.0f), 1.0f, Random.Range(0.0f, 2.0f)),Quaternion.Euler(90, 90, 0));
         }
      }
 }

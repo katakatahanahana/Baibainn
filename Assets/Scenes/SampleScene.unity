@@ -837,6 +837,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 6063448569539289815, guid: 9d112fc80900f4159b6b1539ca05bdc9, type: 3}
+  Object2: {fileID: 0}
   count: 0
   countTime: 0
 --- !u!4 &1764765077
