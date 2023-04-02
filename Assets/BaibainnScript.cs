@@ -23,9 +23,9 @@ public class BaibainnScript : MonoBehaviour
         Debug.Log("i:"+i+"count"+count);
         countTime += Time.deltaTime; 
 
-        for(i = 0;i <= count; i++)
+        for(i = 1;i <= count; i++)
         {
-            Instantiate(Object,Object.transform.position,Quaternion.Euler(90, 90, 0));
+            // Instantiate(Object,Object.transform.position,Quaternion.Euler(90, 90, 0));
         }
 
         if(countTime >= 5f)
