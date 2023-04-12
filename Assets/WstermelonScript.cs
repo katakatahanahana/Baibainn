@@ -8,7 +8,7 @@ public class WstermelonScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -16,7 +16,6 @@ public class WstermelonScript : MonoBehaviour
     {
         wmtransform = this.transform;
         Vector3 pos = wmtransform.position;
-        Debug.Log(pos.x);
         
     }
 }
