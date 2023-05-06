@@ -11,7 +11,7 @@ public class BaibainnScript2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Instantiate(wm,new Vector3(0.0f, 1.0f, 0.0f),Quaternion.Euler(90, 90, 0));  
+        // Instantiate(wm,new Vector3(0.0f, 1.0f, 0.0f),Quaternion.Euler(90, 90, 0));  
         countTime = 0f; 
         count = 1;
     }
@@ -33,7 +33,7 @@ public class BaibainnScript2 : MonoBehaviour
         for (int i=0; i<count-count/2; i++)
         {
             yield return new WaitForSeconds(0.1f);
-            Instantiate(wm,new Vector3(wm.transform.position.x+Random.Range(0.0f, 2.0f),wm.transform.position.y+3.0f,wm.transform.position.z),Quaternion.Euler(90, 90, 0));
+            Instantiate(this.gameObject,new Vector3(wm.transform.position.x+Random.Range(0.0f, 2.0f),wm.transform.position.y+3.0f,wm.transform.position.z),Quaternion.Euler(90, 90, 0));
         }
      }
 }
